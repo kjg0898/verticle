@@ -3,29 +3,26 @@ package org.example;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
-import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.net.NetClient;
-import io.vertx.core.net.NetSocket;
+import io.vertx.core.json.JsonObject;
 import io.vertx.core.shareddata.LocalMap;
 import io.vertx.core.spi.cluster.ClusterManager;
 import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.io.IOException;
 
-public class StringSendMesseage extends AbstractVerticle {
+public class StringSendMessage extends AbstractVerticle {
 
-    private static final Logger logger = LoggerFactory.getLogger(StringSendMesseage.class);
     public static final String KEY_SHARED_DATA_NET_SOCKET = "localmap.netsocket.test";
+    private static final Logger logger = LoggerFactory.getLogger(StringSendMessage.class);
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
          /*Vertx vertx = Vertx.vertx();
-        StringSendMesseage prm = new StringSendMesseage();
+        StringSendMessage prm = new StringSendMessage();
         vertx.deployVerticle(prm, res -> {
             if (res.succeeded()) {
-                logger.info("StringSendMesseage deployed successfully!");
+                logger.info("StringSendMessage deployed successfully!");
             } else {
-                logger.info("StringSendMesseage deployment failed!",res.cause());
+                logger.info("StringSendMessage deployment failed!",res.cause());
             }
         });*/
 
@@ -35,7 +32,7 @@ public class StringSendMesseage extends AbstractVerticle {
         Vertx.clusteredVertx(vertxOptions, res -> {
             if (res.succeeded()) {
                 Vertx vertx = res.result();
-                vertx.deployVerticle(new StringSendMesseage());
+                vertx.deployVerticle(new StringSendMessage());
                 logger.info("Clustered vertx instance started successfully!");
             } else {
                 logger.info("Clustered vertx instance failed to start!");
@@ -43,26 +40,24 @@ public class StringSendMesseage extends AbstractVerticle {
         });
     }
 
-
     @Override
     public void start() {
         LocalMap<String, String> localMap = vertx.sharedData().getLocalMap(KEY_SHARED_DATA_NET_SOCKET);
 
         vertx.setPeriodic(2000, id -> {
-                    String message = "Hello, world!";
-                    localMap.put("message", message);
-                    vertx.eventBus().publish("dev-Bus", message);
-                    logger.info(message);
-                });
-            localMap.keySet().stream().forEach(netSocketId -> {
-                logger.info("localMap remove : {}", netSocketId);
-                localMap.remove(netSocketId);
-            });
-        }
+            String message = "Hello, world!";
+            JsonObject messageJsonObject = new JsonObject().put("verticlename", "StringSendMessage").put("body", message);
+            String string = String.valueOf(messageJsonObject);
+            localMap.put("message", string);
+            vertx.eventBus().publish("dev-Bus", string);
+            logger.info(string);
+        });
+        localMap.keySet().stream().forEach(netSocketId -> {
+            logger.info("localMap remove : {}", netSocketId);
+            localMap.remove(netSocketId);
+        });
     }
-
-
-
+}
        /* // Get a cluster-wide event bus
         EventBus eventBus = vertx.eventBus().getDelegate();
 
@@ -75,12 +70,7 @@ public class StringSendMesseage extends AbstractVerticle {
             }
         });*/
 
-
-
-
-
 /*        NetClient netClient = vertx.createNetClient();
-
         vertx.setPeriodic(2000, timerId -> {
         if (message != null) {
             if (localMap.isEmpty()) {
