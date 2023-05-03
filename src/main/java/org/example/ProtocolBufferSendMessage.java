@@ -27,7 +27,7 @@ public class ProtocolBufferSendMessage extends AbstractVerticle {
     public static final String KEY_SHARED_DATA_NET_SOCKET = "localmap.netsocket.test";
     private static final Logger logger = LoggerFactory.getLogger(ProtocolBufferSendMessage.class);
     private static final String FILE_NAME = "log_1.bin";
-    private static final String READPAHT = "./src/main/resources/protocolBuffer/" + FILE_NAME;
+    private static final String READPATH = "./src/main/resources/protocolBuffer/" + FILE_NAME;
 
     public static void main(String[] args) {
 
@@ -49,7 +49,7 @@ public class ProtocolBufferSendMessage extends AbstractVerticle {
     public void start(Promise<Void> startPromise)   {
 
         LocalMap<String, Buffer> localMap = vertx.sharedData().getLocalMap(KEY_SHARED_DATA_NET_SOCKET);
-        vertx.fileSystem().readFile(READPAHT, ar -> {
+        vertx.fileSystem().readFile(READPATH, ar -> {
             if (ar.succeeded()) {
                 Buffer fileBuffer = ar.result();
                 LineIterator it = IOUtils.lineIterator(new ByteArrayInputStream(fileBuffer.getBytes()), StandardCharsets.UTF_8);

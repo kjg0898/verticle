@@ -1,3 +1,5 @@
-{"SA001":"ICE","SA002":"21200","subCode":300,"body":{"001":"Req"}}
-{"SA001":"ICE","SA002":"21200","subCode":200,"body":{"001":"01","002":"AAA"}}
-{"SA001":"ICE","SA002":"21200","subCode":0,"body":{"001":5,"002":10}}
+{"subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1"}}}
+{"subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1"}}}
+{"subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1"}}}
+{"subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1"}}}
+{"subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1"}}}
