@@ -124,7 +124,7 @@ public class KsmSendMessage extends AbstractVerticle {
                         Buffer ksmSendProduCer = messageJsonObject.toBuffer();
                         vertx.eventBus().publish("dev-Bus", ksmSendProduCer);
                         localMap.put("message", ksmSendProduCer);
-                        logger.info(" message : {}", ksmSendProduCer);
+                        logger.info(String.valueOf(ksmSendProduCer));
                     } else {
                         // 모든 메시지가 전송되었음을 표시
                         localMap.clear();
