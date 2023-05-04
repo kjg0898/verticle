@@ -1,0 +1,8 @@
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}
+{"carKey":"agvSO","createTime":"200820133925396","subCode":"102","body":{"subCode":"102","SA002":"41100","SA001":"AGV","body":{"001":"testnode1-1","002":"testnode1-1","003":"testnode1-4,testnode1-5,testnode1-2"}}}

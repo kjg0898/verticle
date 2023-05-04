@@ -1,0 +1,5 @@
+{
+  "FILENAME": "sensor",
+  "CARKEY": "NAVY_VS_#1",
+  "READPATH": "./src/main/resources/ksm/sensor.txt"
+}

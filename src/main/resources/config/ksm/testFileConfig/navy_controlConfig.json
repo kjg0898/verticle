@@ -1,0 +1,5 @@
+{
+  "FILENAME": "navy_control",
+  "CARKEY": "NAVY_AUTO_VC_01",
+  "READPATH": "./src/main/resources/ksm/navy_control.txt"
+}

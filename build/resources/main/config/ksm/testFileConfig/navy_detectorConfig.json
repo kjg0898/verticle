@@ -1,0 +1,5 @@
+{
+  "FILENAME": "navy_detector",
+  "CARKEY": "NAVY_VS_#1",
+  "READPATH": "./src/main/resources/ksm/navy_detector.txt"
+}

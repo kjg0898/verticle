@@ -1,0 +1,5 @@
+{"writeHandlerID":"__vertx.net.7d5e5035-d8b6-4b9f-968a-02fcd70f6fbd","carKey":"saimSO","createTime":"191025112838778","SB001":"3","SB002":"reserved","SB003":"reserved"}
+{"writeHandlerID":"__vertx.net.7d5e5035-d8b6-4b9f-968a-02fcd70f6fbd","carKey":"saimSO","createTime":"191025112838778","SB001":"3","SB002":"reserved","SB003":"reserved"}
+{"writeHandlerID":"__vertx.net.7d5e5035-d8b6-4b9f-968a-02fcd70f6fbd","carKey":"saimSO","createTime":"191025112838778","SB001":"3","SB002":"reserved","SB003":"reserved"}
+{"writeHandlerID":"__vertx.net.7d5e5035-d8b6-4b9f-968a-02fcd70f6fbd","carKey":"saimSO","createTime":"191025112838778","SB001":"3","SB002":"reserved","SB003":"reserved"}
+{"writeHandlerID":"__vertx.net.7d5e5035-d8b6-4b9f-968a-02fcd70f6fbd","carKey":"saimSO","createTime":"191025112838778","SB001":"3","SB002":"reserved","SB003":"reserved"}
